@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://b.boaproject.net/schema.json",
+    "type": "object",
+    "properties": {
+        "general": {
+            "type": "object",
+            "properties": {
+                "version": {
+                    "type": "number",
+                    "minimum": 0
+                }
+            },
+            "required": ["version"]
+        },
+        "sources": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "api": {
+                        "type": "string",
+                        "pattern": "^https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)$",
+                        "description": "The search API URI"
+                    },
+                    "version": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "catalogs": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "key": {
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "type": "string"
+                                },
+                                "access": {
+                                    "type": "string",
+                                    "enum": ["public", "restricted", "private"],
+                                    "default": "public"
+                                },
+                                "available": {
+                                    "type": "boolean",
+                                    "default": true
+                                }
+                            },
+                            "required": ["key"]
+                        }
+                    }
+                },
+                "required": ["api", "version", "catalogs"]
+            }
+        }
+    }
+}

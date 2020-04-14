@@ -1,0 +1,60 @@
+{
+    "$schema": "http://b.boaproject.net/schema.json",
+    "$id": "http://b.boaproject.net/index.json",
+    "general": {
+        "version": 0.1
+    },
+    "sources": [
+        {
+            "name": "BambuCo",
+            "api": "http://boa.nuestroscursos.net/api/",
+            "version": 1.1,
+            "catalogs": [
+                {
+                    "key": "bbco",
+                    "title": "Banco de objetos abiertos - BambuCo",
+                    "access": "public",
+                    "available": true
+                }
+            ]
+        },
+        {
+            "name": "UdeA",
+            "api": "https://boa.udea.edu.co/api/",
+            "version": 1.1,
+            "catalogs": [
+                {
+                    "key": "ruta-tic",
+                    "title": "RutaTIC",
+                    "access": "public",
+                    "available": true
+                }
+            ]
+        },
+        {
+            "name": "Permanencia - UdeA",
+            "api": "https://permanenciaboa.udea.edu.co/api/",
+            "version": 0.1,
+            "catalogs": [
+                {
+                    "key": "general",
+                    "title": "Repositorio digital de permanencia universitaria",
+                    "access": "public",
+                    "available": true
+                },
+                {
+                    "key": "catedras-udea-diversa",
+                    "title": "Cátedras UdeA Diversa",
+                    "access": "public",
+                    "available": true
+                },
+                {
+                    "key": "cleo",
+                    "title": "CLEO",
+                    "access": "public",
+                    "available": true
+                }
+            ]
+        }
+    ]
+}
