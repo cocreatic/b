@@ -1,6 +1,7 @@
 # B... oA
 
-This project list available search APIs. The APIs implement BoA search specification.
+This project list available search APIs for the CocreaTIC project.
+The APIs implement BoA search specification.
 Also, it contain the default schema to define an APIs list.
 
 *Note:* The _.htaccess_ need be enabled to the directory in order to enable cross origin. View:
