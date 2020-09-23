@@ -6,13 +6,13 @@
     },
     "sources": [
         {
-            "name": "CocreaTIC",
-            "api": "https://ova.cocreatic.org/api/",
+            "name": "UdeMedellín",
+            "api": "https://boa.udem.edu.co/api/",
             "version": 1.1,
             "catalogs": [
                 {
                     "key": "general",
-                    "title": "Repositorio general del proyecto",
+                    "title": "Repositorio institucional",
                     "access": "public",
                     "available": true
                 }
